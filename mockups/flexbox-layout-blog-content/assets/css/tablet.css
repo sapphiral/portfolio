@@ -1,0 +1,35 @@
+
+
+
+
+/* ***** ASSETS ****** */
+main {
+	max-width:  996px;
+	margin: auto;
+}
+.md-flex {
+	display: flex;
+
+}
+.md-flex > * {
+	flex: 1;
+}
+
+main aside.aside {
+	flex: 1;
+	max-width: 300px;
+	order: 3;
+}
+main section.main-content {
+	flex: 2;
+	order: 1;
+}
+
+main section.related-article {
+	flex: 100%;
+
+}
+
+.gap {
+	margin-right: 15px;
+}

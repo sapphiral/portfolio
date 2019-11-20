@@ -1,0 +1,30 @@
+.md-flex {
+	display: flex;
+}
+
+header .logo {
+	order: 2;
+}
+header .topnav {
+	order: 1;
+}
+header .search {
+	order: 3;
+}
+
+main {
+	grid-template-areas: 
+	"aside main"
+	"section section";
+	grid-template-columns: 200px auto;
+
+	max-width: 996px;
+	margin: auto;
+}
+main>aside.aside {
+
+}
+
+main>section.main-content {
+
+}

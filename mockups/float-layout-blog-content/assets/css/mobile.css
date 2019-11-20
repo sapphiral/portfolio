@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+/* ***********ASSETS*********** */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	color: white;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+[class*="col-"] {
+	float: left;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.container {
+	padding: 15px;
+}
+.border {
+	border:  2px solid white;
+}
+
+.dark {
+	background: hsl(0,70%,70%);
+}
+
+.glutter {
+	margin-bottom: 15px;
+}
+
+.row::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.gap {
+	max-width: 15px;
+	min-height: 15px;
+	background: #fff;
+}
+
+main {
+	max-width: 996px;
+	margin: auto;
+}
+.row > .col-1 {width: 8.33%;}
+.row > .col-2 {width: 16.66%;}
+.row > .col-3 {width: 25%;}
+.row > .col-4 {width: 33.33%;}
+.row > .col-5 {width: 41.66%;}
+.row > .col-6 {width: 50%;}
+.row > .col-7 {width: 58.33%;}
+.row > .col-8 {width: 66.66%;}
+.row > .col-9 {width: 75%;}
+.row > .col-10 {width: 83.33%;}
+.row > .col-11 {width: 91.66%;}
+.row > .col-12 {width: 100%;}
