@@ -23,3 +23,8 @@
 .row > .col-md-10 {width: 83.33%;}
 .row > .col-md-11 {width: 91.66%;}
 .row > .col-md-12 {width: 100%;}
+
+
+.show {
+	display: block;
+}

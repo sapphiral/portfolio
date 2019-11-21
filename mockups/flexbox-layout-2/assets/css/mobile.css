@@ -1,0 +1,144 @@
+
+
+/* ********ASSETS******* */
+:root {
+	--primary: hsl(0, 80%, 75%);
+	--dark: hsl(0, 90%, 12%);
+	--light: hsl(0, 80%, 85%);
+	--shadow: 0 0 15px hsla(0,80%,30%,0.4);
+	--shadow-dark: 0 0 15px hsla(0, 90%, 12%,0.4);
+	--shadow-light: 0 0 15px hsla(0, 80%, 90%,0.4);
+}
+
+
+* {
+	box-sizing:  border-box;
+}
+body {
+	margin: 0;
+	font-family: "Helvetica";
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+h1,h2,p {
+	margin: 0;
+}
+
+
+.flex {
+	display:flex;
+}
+.flex > * {
+	flex: 1 25%;
+
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.primary {
+	background: var(--primary);
+}
+.dark {
+	background: var(--dark);
+}
+.light {
+	background: var(--light);
+}
+.white {
+	color: white;
+}
+
+.center {justify-self: center; text-align: center;}
+.justify-start {justify-content: start;}
+.align-center {align-items: center;}
+.justify-center {justify-content: center;}
+.auto{margin: auto;}
+
+.h-pad {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.v-pad {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.border {
+	border: 2px solid var(--light);
+}
+
+input, textarea {
+	border-radius: 20px;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	border: 1px solid var(--light);
+	box-shadow: var(--shadow-dark);
+
+}
+.auto {
+	margin: auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+
+article p {
+	font-family: serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.00rem;
+    word-spacing: 0.4rem;
+    color: rgba(0,0,0,0.7);
+}
+/* *********END ASSETS********** */
+
+.logo {
+	flex: 5 0px;
+}
+
+main .main-content {
+}
+main .flex > * {
+	flex: 100%;
+	margin-bottom: 15px;
+}
+
+main .aside-left, main .aside-right {
+	display: none;
+}
+article header {
+	width: 400px;
+}
+
+footer .flex > * {
+	flex: 100%;
+}
+footer .flex.contact {
+	justify-content: center;
+}
+footer .flex.contact > * {
+	flex: 0 0 100px;
+}
+footer .flex.contact li:first-child {
+	flex: 0 0 200px;
+}
+footer .message ul, footer form {
+	width: min-content;
+}
+footer .message h3 {
+	width: 500px;
+}

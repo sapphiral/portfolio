@@ -1,3 +1,10 @@
+.on {
+	display: block;
+}
+
+.off {
+	display: none;
+}
 .md-flex {
 	display: flex;
 }
@@ -28,3 +35,4 @@ main>aside.aside {
 main>section.main-content {
 
 }
+

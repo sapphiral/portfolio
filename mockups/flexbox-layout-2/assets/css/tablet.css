@@ -1,0 +1,36 @@
+/* *******ASSETS****** */
+
+
+.md-grid {
+	display: grid;
+}
+
+.md-flex {
+	display: flex;
+}
+.md-auto {
+	margin: auto;
+}
+.md-center {
+	text-align: center;
+}
+/* ********END ASSETS******** */
+
+
+main .flex .aside-left, main .flex .aside-right {
+	flex: 1 auto;
+}
+main .flex .aside-right {
+	display: block;
+}
+main .flex .main-content {
+	flex: 3 0px;
+	max-width: 768px;
+}
+main .related-content > div:only-of-type {
+	width: 768px;
+}
+
+footer ul.contact {
+	grid-auto-flow: column;
+}

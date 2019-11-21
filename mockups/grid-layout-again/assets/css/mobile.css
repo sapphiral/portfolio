@@ -1,0 +1,139 @@
+
+
+
+header > .grid  {
+	grid-template-areas: "top" "bottom" ;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
+}
+header .top {
+	grid-area: top;
+}
+header .bottom {
+	grid-area: bottom;
+}
+header .top.grid {
+	grid-template-areas: ;
+	grid-template-columns: minmax(50px,100px) 1fr minmax(50px,100px);
+	grid-template-rows: 1fr;
+	height: 50px;
+
+}
+
+main .grid {
+	grid-template-areas: "main" "left" "right";
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	height: 600px;
+	color: white;
+
+}
+
+main .grid .left {
+	grid-area: left;
+}
+main .grid .main {
+	grid-area: main;
+}
+main .grid .right {
+	grid-area: right;
+}
+footer .grid {
+	grid-template-areas: ;
+	grid-template-columns: ;
+	grid-template-rows: ;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ********** - ASSETS - ******* */
+.flex {
+	display: flex;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.flex > * {
+	flex: 1;
+}
+:root {
+	--primary: hsl(0,80%,75%);
+	--dark: hsl(0,90%,12%);
+	--light: hsl(0,90%,90%);
+}
+* {
+	box-sizing:  border-box;
+}
+
+body {
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type:  none;
+}
+
+.grid {
+	display: grid;
+}
+
+
+.primary {
+	background: var(--primary);
+}
+.dark {
+	background: var(--dark);
+}
+.light {
+	background:  var(--light);
+}
+
+.box {
+	padding: 15px;
+}
+
+.border {
+	border:  2px solid var(--primary);
+}
+.gap {
+	gap: 15px;
+}
+
+.bg-image, .bg-image + * {
+	color: var(--dark);
+	text-align: center;
+	height: 300px;
+	font-size:  50px;
+	line-height: 300px;
+}
+.bg-image + * {
+	height: 50px;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+.white {
+	color: white;
+}
+
+.justify-center{justify-content: center;}
+.justify-between{justify-content: space-between;}
+.justify-start{justify-content: start; justify-content: flex-start;}
+.justify-end{justify-content: end; justify-content: flex-end;}
+.align-center{align-content: center}
+.align-start{align-content: start}
+.align-end{align-content: end}
+
+.glutter {
+	margin-bottom: 15px;
+}

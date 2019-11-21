@@ -4,7 +4,6 @@
 
 /* ***** ASSETS ****** */
 main {
-	max-width:  996px;
 	margin: auto;
 }
 .md-flex {
@@ -15,14 +14,19 @@ main {
 	flex: 1;
 }
 
-main aside.aside {
+main aside.aside2 {
 	flex: 1;
-	max-width: 300px;
+	order: 1;
+}
+main aside.aside1 {
+	flex: 1;
 	order: 3;
 }
 main section.main-content {
-	flex: 2;
-	order: 1;
+	margin-right: 15px;
+	flex: 4;
+	max-width: 996px;
+	order: 2;
 }
 
 main section.related-article {

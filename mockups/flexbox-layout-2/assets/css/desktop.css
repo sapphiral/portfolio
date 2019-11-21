@@ -1,0 +1,27 @@
+main .main-content, main .related-content {
+	width: 768px;
+}
+main .flex .aside-right {
+	display: block;
+	flex: auto;
+}
+
+
+
+.lg-auto {
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+	main .flex .aside-left {
+		flex: auto;
+		display: block;
+}
+}
