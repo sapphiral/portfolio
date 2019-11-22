@@ -89,6 +89,7 @@ article .header * {
 	/* margin: 0; */
 }
 
+
 article p {
 	font-size: 1.3rem;
 }
@@ -133,4 +134,86 @@ footer div.ul.flex {
 .dark{background: var(--dark);}
 .light{background: var(--light);}
 .primary{background: var(--primary);}
+
+
+/* slider for top navigation */
+
+.toggler,  [type="checkbox"] {
+	position: absolute;
+	z-index: 1;
+}
+
+[type="checkbox"] {
+	z-index: 2;
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+}
+.toggler {
+	width: 24px;
+	height: 4px;
+	background: #fff;
+	border-radius: 3px;
+}
+.toggler::after, .toggler::before {
+	position: absolute;
+	content: "";
+	top: 8px;
+	left: 0;
+	background: #fff;
+	width: 24px;
+	height: 4px;
+	border-radius: 3px;
+}
+.toggler::before {
+	top: 20px;
+}
+.topnav {
+	position: relative;
+}
+
+.topnav ul {
+	position: absolute;
+	top: 65px;
+	left: -10px;
+	width: 0px;
+	overflow: hidden;
+	transition: width 0.3s;
+}
+
+.topnav ul * {
+	color: var(--deep);
+}
+.topnav input:checked ~ ul {
+	width: 200px;
+}
+
+main.main {
+	position: relative;
+	transition: transform 0.3s;
+}
+.offset {
+	transform: translateX(200px);
+}
+
+/****** JAVASCRIPT ASSETS ******/
+.topnav-absolute {
+	position: absolute;
+	background: var(--deep);
+}
+.topnav-absolute * {
+	color: var(--dark);
+}
+.offset-margin {
+	top: -10px;
+	left:  -10px;
+	bottom: -10px;
+	right: -10px;
+}
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
 

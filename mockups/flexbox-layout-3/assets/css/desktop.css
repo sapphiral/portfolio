@@ -39,7 +39,6 @@ body .flex>aside.left {
 	color: var(--deep);
 }
 
-
 @media screen and (min-width: 1200px) {
 
 	body main.main {
