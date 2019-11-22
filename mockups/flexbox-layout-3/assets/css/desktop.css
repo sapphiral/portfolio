@@ -1,0 +1,62 @@
+header .logo {
+	flex: 1;
+}
+aside.right {
+	display: block;
+}
+body .flex>main.main {
+	flex: 3 0 0;
+}
+
+body .flex>aside.right {
+	flex: 1 0 0;
+}
+
+body .flex>aside.left {
+	display: block;
+	flex: 1;
+}
+.topnav {
+	align-self: center;
+	border-radius: 60px;
+	padding: 10px 0;
+	background:  var(--primary);
+}
+.lg-flex {
+	display: flex;
+}
+.lg-flex > * {
+	padding: 0 15px;
+}
+.lg-flex * {
+	color: var(--);
+}
+
+.topnav a {
+	color: var(--dark);
+}
+.topnav a:hover {
+	color: var(--deep);
+}
+
+
+@media screen and (min-width: 1200px) {
+
+	body main.main {
+		flex: 3 0px;
+	}
+	aside.left {
+		order: 1;
+	}
+	main.main {
+		order: 2;
+	}
+	aside.right {
+		order: 3;}
+	.related {order:4;
+	}
+	.footer {
+		order: 5;
+	}
+
+}

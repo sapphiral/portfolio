@@ -1,0 +1,136 @@
+
+/* ***********ASSETS*********** */
+:root {
+	--primary: hsl(0,80%,88%);
+	--light:  hsl(0,85%,98%);
+	--dark:  hsl(0,85%,60%);
+	--deep: hsl(0,85%,30%);
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	color: white;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+.primary {
+	color: var(--dark);
+}
+
+main.light {
+	color: var(--dark);
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.flex {
+	display: flex;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.flex > * {
+	margin: 10px;
+	flex: 100%;
+	text-align: center;
+}
+.container {
+	padding: 15px;
+}
+
+.border {
+	border: 2px solid white;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+/* *********BASIC SETTINGS FOR LAYOUTS******** */
+
+aside.left {
+	display: none;
+}
+
+header .logo h1,header .logo p {
+	margin: 0;
+}
+.logo {
+	flex: 3 0 0;
+}
+.topnav {
+	text-align: left ;
+	flex: 1 0 0;
+}
+.search{
+	text-align: right ;
+	flex: 1 0 0;
+}
+
+main {
+	height: 1700px;
+}
+
+article {
+	text-align: left;
+}
+article .header {
+
+} 
+article .header * {
+	/* margin: 0; */
+}
+
+article p {
+	font-size: 1.3rem;
+}
+.bg-image {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 15px 0 ;
+	padding: 15px;
+	
+}
+
+article .bg-image img {
+	width: 100%;
+	max-height: 458px;
+}
+footer .flex > ul {
+	text-align: left;
+	padding-bottom: 15px;
+	
+	flex: 0 0 170px;
+}
+footer .flex > ul li {
+	padding: 0 20px;
+}
+
+footer .ul {
+	justify-content:  space-between;
+}
+footer .copyright {
+	margin-top: 10px;
+}
+
+footer div.ul.flex {
+	flex: 1;
+	margin: auto;
+	max-width: 600px;
+}
+
+/* ********RESPOSIVE SETUPS******** */
+
+.dark{background: var(--dark);}
+.light{background: var(--light);}
+.primary{background: var(--primary);}
+

@@ -1,0 +1,12 @@
+body aside.left, aside.right {
+	flex: 1;
+}
+
+.main {
+	min-width: 677px;
+	max-width: 677px;
+}
+header [type="checkbox"] {
+	display: none;
+}
+
