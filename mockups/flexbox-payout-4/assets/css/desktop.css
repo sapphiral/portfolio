@@ -1,3 +1,16 @@
+
+/* LAYOUT CONFIG */
+/* set orders of header layout */
+.topnav {
+	order: 2;
+}
+.search {
+	order: 3;
+}
+.logo {
+	order: 1;
+}
+/* set orders of main layout */
 aside.left, aside.right {
 	flex: 1 0 0;
 }
@@ -23,6 +36,7 @@ footer.footer {
 	order: 5;
 }
 
+/* CUSTOMIZED SETTINGS */
 .bg-image {
 	width: 100%;
 	max-height: 466px;

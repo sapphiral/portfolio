@@ -19,6 +19,9 @@ console.log(getComputedStyle(header,null).height);
 //settings for topnav
 
 window.onload = function () {
+	setInterval(function() {
+		console.log("hello")
+	},1000);
 
 	//**topnav slider 
 	headerCheckbox.addEventListener("click", function () {

@@ -12,6 +12,9 @@ aside.right {
 .sm-flex {
 	display: block;
 }
+section.related .bg-image {
+	max-height: 222px;
+}
 footer .wrapper {
 	max-width: 996px;
 }
