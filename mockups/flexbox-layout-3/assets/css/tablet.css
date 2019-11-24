@@ -3,10 +3,34 @@ body aside.left, aside.right {
 }
 
 .main {
-	min-width: 677px;
-	max-width: 677px;
-}
-header [type="checkbox"] {
-	display: none;
+	/* min-width: 677px; */
+	/* max-width: 677px; */
 }
 
+/* // topnav slider */
+
+
+/* related section */
+.related h1 {
+	margin: 0;
+}
+.related > .flex {
+	max-width: 996px;
+	margin:  auto;
+}
+.related .bg-image {
+	height: 212px;
+	overflow: hidden;
+}
+.related .bg-image img {
+	width: 100%;
+	height: auto;
+}
+.related article * {
+	margin: 0;
+	text-align: left;
+}
+
+.related {
+	color: var(--dark);
+}

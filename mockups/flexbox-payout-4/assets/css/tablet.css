@@ -1,0 +1,17 @@
+main.main {
+	max-width: 715px;
+}
+aside.right {
+	max-width: 300px;
+}
+
+.related .flex {
+	flex-direction: row;
+}
+
+.sm-flex {
+	display: block;
+}
+footer .wrapper {
+	max-width: 996px;
+}
