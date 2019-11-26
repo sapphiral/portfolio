@@ -124,6 +124,9 @@ main .main-content p {
     line-height: 2rem;
 }
 
+article h1, article h2 {
+	font-family: sans-serif;
+}
 .logo {
 	font-family: sans-serif;
 }
